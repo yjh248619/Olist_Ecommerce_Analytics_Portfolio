@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Olist 电商平台交易增长与供给治理分析 - 1 页作品集</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 8mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #1d2433;
+      background: #f4efe6;
+      font-family: "Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 281mm;
+      min-height: 194mm;
+      padding: 8mm;
+      background:
+        radial-gradient(circle at top left, rgba(224, 108, 70, 0.20), transparent 34%),
+        linear-gradient(135deg, #fffaf0 0%, #f6efe2 50%, #eef4ef 100%);
+      border: 1px solid #d8cbb9;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr;
+      gap: 12px;
+      align-items: end;
+      padding-bottom: 8px;
+      border-bottom: 3px solid #253047;
+    }
+
+    h1 {
+      margin: 0;
+      color: #182033;
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: #5c4738;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .tagline {
+      color: #f8efe1;
+      background: #253047;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .card {
+      min-height: 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(37, 48, 71, 0.16);
+      border-radius: 14px;
+      box-shadow: 0 8px 22px rgba(55, 43, 29, 0.08);
+    }
+
+    .card.dark {
+      color: #fff9ec;
+      background: #9b4d35;
+      border-color: #9b4d35;
+    }
+
+    h2 {
+      margin: 0 0 7px;
+      color: #9b4d35;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .dark h2 {
+      color: #ffe4bd;
+    }
+
+    p {
+      margin: 0 0 7px;
+      font-size: 10.5px;
+      line-height: 1.55;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    li {
+      margin: 0 0 5px;
+      font-size: 10.2px;
+      line-height: 1.42;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px;
+    }
+
+    .metric {
+      padding: 8px;
+      background: #fff6e8;
+      border-left: 4px solid #d96f3d;
+      border-radius: 10px;
+    }
+
+    .metric strong {
+      display: block;
+      color: #182033;
+      font-size: 17px;
+      line-height: 1.05;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 3px;
+      color: #5a6272;
+      font-size: 9.2px;
+      line-height: 1.25;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .step {
+      padding: 6px 5px;
+      color: #253047;
+      background: #e8f1ea;
+      border-radius: 8px;
+      font-size: 9.2px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .mini-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+      font-size: 9.4px;
+    }
+
+    .mini-table th,
+    .mini-table td {
+      padding: 4px 5px;
+      border-bottom: 1px solid rgba(37, 48, 71, 0.12);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .mini-table th {
+      color: #5c4738;
+      font-weight: 700;
+    }
+
+    .highlight {
+      color: #9b4d35;
+      font-weight: 700;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+      color: #5a6272;
+      font-size: 9px;
+      line-height: 1.35;
+    }
+
+    .footer div {
+      padding: 7px 9px;
+      background: rgba(37, 48, 71, 0.08);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="header">
+      <div>
+        <h1>Olist 电商平台交易增长与供给治理分析</h1>
+        <div class="subtitle">
+          从数据质量、GMV 归因、用户生命周期、品类/卖家治理，到冷启动推荐召回与 AB 实验设计的完整电商 DA 项目。
+        </div>
+      </div>
+      <div class="tagline">
+        <strong>项目定位</strong><br>
+        不是普通 EDA，而是模拟电商平台真实工作流: 数据可信 -> 业务诊断 -> 策略收益 -> 推荐召回 -> 指标体系/看板/实验。
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>项目方法</h2>
+        <div class="flow">
+          <div class="step">数据可信</div>
+          <div class="step">交易诊断</div>
+          <div class="step">用户生命周期</div>
+          <div class="step">供给治理</div>
+          <div class="step">GMV 归因</div>
+          <div class="step">地域 VOC</div>
+          <div class="step">推荐召回</div>
+          <div class="step">AB 实验</div>
+        </div>
+
+        <h2 style="margin-top:10px;">技术栈与产出</h2>
+        <ul>
+          <li><strong>MySQL 8.0:</strong> 建表、导入、外键、质量检查、业务分析 SQL。</li>
+          <li><strong>Python / pandas:</strong> 评论导入、推荐 baseline 评估。</li>
+          <li><strong>指标:</strong> GMV、订单量、AOV、复购、留存、履约、评分、差评率。</li>
+          <li><strong>推荐:</strong> GlobalHot、CategoryHot、ItemCF、HybridRecall。</li>
+          <li><strong>文档:</strong> 指标体系、看板、AB 实验、面试叙事、流程图。</li>
+        </ul>
+
+        <h2 style="margin-top:10px;">数据质量亮点</h2>
+        <ul>
+          <li>修复 `LOAD DATA` 假成功、评论换行导入、品类翻译缺失。</li>
+          <li>用 `v_orders_clean` 排除 23 条时间异常订单，保留原始事实表。</li>
+          <li>主动标注 unavailable 订单缺少商品/卖家明细的数据边界。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>核心经营发现</h2>
+        <div class="metric-grid">
+          <div class="metric"><strong>15.84M</strong><span>总 GMV, BRL</span></div>
+          <div class="metric"><strong>98,666</strong><span>有效成交订单</span></div>
+          <div class="metric"><strong>160.58</strong><span>AOV, BRL</span></div>
+          <div class="metric"><strong>11.6 天</strong><span>平均总履约</span></div>
+          <div class="metric"><strong>3.1%</strong><span>真实用户复购率</span></div>
+          <div class="metric"><strong>0.4%-0.7%</strong><span>Cohort 次月留存</span></div>
+        </div>
+
+        <h2 style="margin-top:10px;">GMV 归因</h2>
+        <table class="mini-table">
+          <tr><th>案例</th><th>结果</th></tr>
+          <tr><td>2017-11 黑五</td><td>GMV 环比 <span class="highlight">+53.55%</span>，订单量 <span class="highlight">+62.77%</span>，AOV <span class="highlight">-5.66%</span>。</td></tr>
+          <tr><td>结论</td><td>促销拉新驱动增长，不是客单价提升；人均订单数仍接近 1。</td></tr>
+        </table>
+
+        <h2 style="margin-top:10px;">供给治理发现</h2>
+        <ul>
+          <li>Top 5 品类贡献 <strong>39.24%</strong> GMV，Top 10 贡献 <strong>62.19%</strong>。</li>
+          <li>`office_furniture` 表面是品类差，钻取后发现 <strong>70%</strong> 订单集中在一个低评分慢履约卖家。</li>
+          <li>最大卖家不等于最好卖家，卖家健康分能揭示 GMV 排名掩盖的体验风险。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>地域、VOC 与推荐</h2>
+        <table class="mini-table">
+          <tr><th>模块</th><th>关键发现</th></tr>
+          <tr><td>地域</td><td>SP 贡献 <span class="highlight">37.41%</span> GMV；RJ/RS/BA 为高价值待治理市场。</td></tr>
+          <tr><td>履约</td><td>跨州配送 <span class="highlight">11.69 天</span>，同州 <span class="highlight">4.73 天</span>。</td></tr>
+          <tr><td>VOC</td><td>物流配送 + 未收到货占差评文本 <span class="highlight">38.94%</span>。</td></tr>
+          <tr><td>慢履约</td><td>21 天以上订单物流投诉占比 <span class="highlight">33.12%</span>。</td></tr>
+        </table>
+
+        <h2 style="margin-top:10px;">推荐召回原型</h2>
+        <ul>
+          <li>用户冷启动率 <strong>97.72%</strong>，商品冷启动率 <strong>60.48%</strong>。</li>
+          <li>ItemCF 因共现稀疏失效，过滤后相似商品对仅 <strong>422</strong> 对。</li>
+          <li>HybridRecall: 冷启动走 GlobalHot，非冷启动走 CategoryHot + GlobalHot 补足。</li>
+          <li>warm_targets Recall@50: GlobalHot <strong>6.49%</strong> -> HybridRecall <strong>6.54%</strong>。</li>
+          <li>非冷启动 warm 用户 Recall@50: GlobalHot <strong>4.78%</strong> -> HybridRecall <strong>6.57%</strong>。</li>
+        </ul>
+
+        <h2 style="margin-top:10px;">业务策略</h2>
+        <ul>
+          <li>首单体验优先于复杂复购运营。</li>
+          <li>高 GMV 低体验卖家进入健康分治理。</li>
+          <li>评价邀请改为签收后触发，AB 验证评分偏差。</li>
+          <li>冷启动推荐优先做热门兜底与轻个性化混合。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div><strong>适配岗位:</strong> 电商 DA、经营分析、用户增长、供给治理、推荐策略分析。</div>
+      <div><strong>面试亮点:</strong> 数据质量治理 + GMV 归因 + 卖家钻取推翻初始假设 + 推荐冷启动策略。</div>
+      <div><strong>关键边界:</strong> Olist 无曝光/点击/实验分组，因此推荐部分定义为购买行为离线召回原型。</div>
+    </section>
+  </main>
+</body>
+</html>
