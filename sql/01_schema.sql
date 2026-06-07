@@ -132,7 +132,7 @@ DECIMAL(10,7) = 整数 3 位 + 小数 7 位，精度 = 1.11 cm（1° 纬度 ≈ 
 业务上经常 WHERE state='SP' AND city='são paulo' 查特定城市
 复合索引 (state, city) 同时支持 WHERE state=X 单条件 和 WHERE state=X AND city=Y 双条件（最左前缀原则）
 不需要单独建 state 索引（被复合索引前缀覆盖）
-面试常考：「最左前缀原则」标准考点
+常见知识点：「最左前缀原则」标准考点
 为什么要加自增 id 做物理主键
 InnoDB 表必须有聚簇索引：不显式建主键，会用第一个 UNIQUE NOT NULL 字段；都没有就自动生成 6 字节隐藏 row_id
 隐藏 row_id 的问题：

@@ -9,10 +9,9 @@
 | 入口 | 适合场景 |
 |---|---|
 | [1 页 PDF 作品集](docs/olist_one_page_portfolio.pdf) | 快速了解项目背景、方法、发现和业务价值 |
-| [完整项目叙事稿](notes/project_narrative.md) | 面试中 15-20 分钟讲项目 |
-| [模拟面试稿](notes/mock_interview_da_to_reco.md) | 从业务大盘讲到推荐系统 |
-| [不同公司简历项目段](notes/resume_project_variants_da.md) | 淘宝 / 京东 / 拼多多 / Shopee 等岗位投递 |
 | [推荐召回笔记](notes/reco_notes.md) | GlobalHot / CategoryHot / ItemCF / HybridRecall 评估 |
+| [指标体系设计](notes/metrics_framework.md) | 电商经营指标、诊断指标与护栏指标 |
+| [看板设计](notes/dashboard_design.md) | 经营总览、履约、品类、卖家监控看板 |
 
 ## 项目一页摘要
 
@@ -75,7 +74,6 @@ Olist_Ecommerce_Analytics_Portfolio/
 ├── docs/                         1 页作品集 PDF 与 HTML
 ├── .env.example                  本地复现所需环境变量模板
 ├── requirements.txt              Python 依赖
-├── 面试回答.md                    项目面试 Q&A
 └── README.md                     项目入口
 ```
 
@@ -143,16 +141,12 @@ Olist_Ecommerce_Analytics_Portfolio/
 | [notes/dashboard_design.md](notes/dashboard_design.md) | 看板与监控设计 |
 | [notes/ab_test_design.md](notes/ab_test_design.md) | AB 实验设计 |
 | [notes/reco_notes.md](notes/reco_notes.md) | 推荐召回原型与 Hybrid baseline |
-| [notes/project_narrative.md](notes/project_narrative.md) | 15-20 分钟项目面试叙事稿 |
 | [notes/project_flow.md](notes/project_flow.md) | 项目流程图 |
-| [notes/mock_interview_da_to_reco.md](notes/mock_interview_da_to_reco.md) | 从大盘到推荐的完整模拟面试 |
-| [notes/resume_project_variants_da.md](notes/resume_project_variants_da.md) | 淘宝/京东/拼多多/Shopee 等简历项目段 |
 | [docs/olist_one_page_portfolio.pdf](docs/olist_one_page_portfolio.pdf) | 1 页 PDF 作品集 |
 | [docs/olist_one_page_portfolio.html](docs/olist_one_page_portfolio.html) | 作品集 HTML 源文件 |
 | [notes/15_analysis_gmv_attribution_results.txt](notes/15_analysis_gmv_attribution_results.txt) | GMV 归因结果 |
 | [notes/45_analysis_geo_market_results.txt](notes/45_analysis_geo_market_results.txt) | 地域经营结果 |
 | [notes/55_analysis_review_voc_results.txt](notes/55_analysis_review_voc_results.txt) | VOC 分析结果 |
-| [面试回答.md](面试回答.md) | 16 个 Part 的面试 Q&A |
 
 ## 如何复现
 
@@ -169,7 +163,7 @@ Olist_Ecommerce_Analytics_Portfolio/
 11. 依次执行业务分析 SQL 和推荐数据集 SQL。
 12. 执行 `scripts/reco_baseline.py` 评估推荐召回 baseline。
 
-## 面试亮点
+## 项目亮点
 
 - 不是直接 EDA，而是先做数据质量治理，能讲清楚 LOAD DATA 假成功、脏文本导入、维度补全和异常视图。
 - RFM 没有机械套 `NTILE`，而是识别低复购场景下 F 维度失效，改用业务阈值。

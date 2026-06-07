@@ -2,7 +2,7 @@
 
 > 分析文件:`sql/30_analysis_rfm.sql`
 > 分析日期:2026-06-03
-> 相关文件:`sql/04_data_quality.sql`(数据基础)、`notes/data_quality_report.md`(质量报告)、`面试回答.md`(面试 Q&A)
+> 相关文件:`sql/04_data_quality.sql`(数据基础)、`notes/data_quality_report.md`(质量报告)
 
 ---
 
@@ -144,11 +144,11 @@ END AS f_score
 
 ---
 
-## 五、面试金句
+## 五、汇报要点
 
-见 `面试回答.md` 中的以下 Q&A:
-- Q: 你做 RFM 时遇到过什么坑?
-- Q: 为什么 RFM 必须用 customer_unique_id?
-- Q: Olist 复购率 3.1% 怎么解读?
+本节汇报要点:
+- RFM 不能机械套 `NTILE`，需要结合业务分布修正打分规则。
+- 用户粒度必须使用 `customer_unique_id`，否则会把一次下单客户误当成真实用户。
+- Olist 复购率仅约 3.1%，说明它更像获取型业务，而不是强留存业务。
 - Q: 核心用户只有 6 个人,分层还有意义吗?
 - Q: 钻取那个买了 15 次的最忠诚用户,你发现什么?

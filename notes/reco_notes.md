@@ -102,7 +102,7 @@ interaction_events
 | 只看 Recall 不看 Coverage | 热门榜过度集中 | 同时输出 Recommendation Coverage 和 Candidate Coverage |
 | 高评分重排直接替代热门 | Recall 明显下降 | 把 QualityHybrid 作为体验护栏或 AB 实验假设 |
 
-## 七、面试讲法
+## 七、汇报口径
 
 ```text
 我没有把推荐系统理解成“上来训练一个模型”。
