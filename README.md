@@ -2,6 +2,30 @@
 
 基于 Kaggle 的 Brazilian E-Commerce Public Dataset by Olist，构建一个从数据质量治理、交易漏斗诊断、用户生命周期、品类与卖家经营，到推荐召回原型和 AB 实验设计的完整电商数据分析项目。
 
+> 这是一个面向数据分析 / 商业分析 / 电商策略分析岗位的作品集项目。项目重点不是单纯 EDA，而是模拟平台数据分析师如何从可信数据出发，定位增长与体验问题，并把分析结论落到策略、看板、实验和推荐召回原型。
+
+## 快速入口
+
+| 入口 | 适合场景 |
+|---|---|
+| [1 页 PDF 作品集](docs/olist_one_page_portfolio.pdf) | 快速了解项目背景、方法、发现和业务价值 |
+| [完整项目叙事稿](notes/project_narrative.md) | 面试中 15-20 分钟讲项目 |
+| [模拟面试稿](notes/mock_interview_da_to_reco.md) | 从业务大盘讲到推荐系统 |
+| [不同公司简历项目段](notes/resume_project_variants_da.md) | 淘宝 / 京东 / 拼多多 / Shopee 等岗位投递 |
+| [推荐召回笔记](notes/reco_notes.md) | GlobalHot / CategoryHot / ItemCF / HybridRecall 评估 |
+
+## 项目一页摘要
+
+| 模块 | 业务问题 | 方法与产出 |
+|---|---|---|
+| 数据质量治理 | 分析前数据是否可信 | MySQL 建模、LOAD DATA 导入、外键完整性检查、异常视图 |
+| 交易增长诊断 | GMV 增长来自哪里 | 订单量 × AOV 拆解、黑五增长归因、漏斗损耗识别 |
+| 用户生命周期 | Olist 是留存型还是获取型业务 | RFM、Cohort、LTV，识别低复购与高冷启动特征 |
+| 品类与卖家治理 | 哪些供给带来 GMV 与体验风险 | 品类钻取、卖家健康分、低评分慢履约卖家定位 |
+| 地域与 VOC | 低评分背后的真实原因是什么 | 州维度履约分析、评论关键词规则、物流投诉归因 |
+| 推荐召回原型 | 冷启动场景下如何做推荐 baseline | GlobalHot、CategoryHot、ItemCF、HybridRecall 离线评估 |
+| DA 专项交付 | 如何把分析变成业务动作 | 指标体系、看板设计、AB 实验方案、策略收益估算 |
+
 项目定位不是普通 EDA，而是模拟电商平台数据分析师的真实工作流:
 
 ```text
